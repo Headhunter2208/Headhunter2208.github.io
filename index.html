@@ -1,7 +1,32 @@
 <!DOCTYPE html>
 <html>
 <body>
+
+<style>
+h1 {text-align: center;}
+p {text-align: center;}
+id{text-align: center;}
+</style>
+
+
 <h1>Starvation Lake Yacht Club Fantasy F1 League</h1>
 <p>Here is where you can select your team each race week.</p>
-</body>
+
+<p>Enter your team name</p>
+      
+    <input id="name" type="text">
+    <button type="button" onclick="EnterName()">Submit</button>
+    <p style="color:green"id="demo"></p>
+  
+  
+    <script>
+        function EnterName()
+        {
+            var x= document.getElementById("name").value;
+  
+            document.getElementById("demo").innerHTML = 
+                "Welcome to the SLYC F1 League "+ x ;
+        }
+    		</script>
+	</body>
 </html>
