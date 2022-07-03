@@ -27,5 +27,19 @@ button{text-align: center;}
                 "Welcome to the SLYC F1 League "+ x ;
         }
 		</script>
-	</body>
+
+<?php
+   echo "$to_email = "jhead2646@gmail.com";
+   $subject = "Simple Email Test via PHP";
+   $body = "Hi,\n This is test email send by PHP Script";
+   $headers = "From: fantasyf1SLYC@gmail.com";
+ 
+   if ( mail($to_email, $subject, $body, $headers)) {
+      echo("Email successfully sent to $to_email...");
+   } else {
+      echo("Email sending failed...");
+   }
+}
+?>
+
 </html>
