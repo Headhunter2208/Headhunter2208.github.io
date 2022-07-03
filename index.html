@@ -28,6 +28,9 @@ button{text-align: center;}
         }
 		</script>
 
+<button type="button" onclick="SendEmail()">Send Team</button>
+<script>
+function SendEmail(){
 <?php
    echo "$to_email = "jhead2646@gmail.com";
    $subject = "Simple Email Test via PHP";
@@ -38,8 +41,10 @@ button{text-align: center;}
       echo("Email successfully sent to $to_email...");
    } else {
       echo("Email sending failed...");
-   }
+   		}
+	}
 }
 ?>
+</script>
 
 </html>
