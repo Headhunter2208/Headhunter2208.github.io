@@ -30,7 +30,7 @@ button{text-align: center;}
 
 <form method="post">
     Enter Your Text Here:<br>
-    <input type="text" name="WriteTo"><br>
+    <input type="text" name="textdata"><br>
     <input type="submit" name="submit">
     
   </form>
@@ -41,7 +41,7 @@ button{text-align: center;}
 if(isset($_POST['textdata']))
 {
 $data=$_POST['textdata'];
-$fp = fopen('data.txt', 'a');
+$fp = fopen('WriteTo.txt', 'a');
 fwrite($fp, $data);
 fclose($fp);
 }
